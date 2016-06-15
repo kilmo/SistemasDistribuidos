@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mensure seu &Iacute;ndice de massa corporal (IMC)</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>Mensure seu &iacute;ndice de massa corporal (IMC)</h1>
+  <div id="main">
+<form name="fomulario"  action="/imcApi.py" method="post">
+	<label>Nome:</label><br>
+  <input type="text" name="nome"><br>
+  <br>
+	<label>Idade:</label><br>
+  <input type="text" name="idade"><br>
+  <br>
+  <label>Sexo:</label><br>
+   <form name="sexo">
+  <input type="radio" name="genero" value="masculino" > Masculino        
+  <input type="radio" name="genero" value="feminino"> Feminino       
+  <input type="radio" name="genero" value="outro"> Outros
+</form> 
+<br>
+  <label>Altura:</label><br>
+  <input type="text" name="altura"><br>
+  <br>
+  <label>Peso:</label><br>
+  <input type="text" name="peso"><br>
+<br>
+    <input type="submit" value="Calcular">
+</form> 
+<br>
+	<label id="imc">IMC: </label>
+  </div>
+
+</body>
+</html> 
